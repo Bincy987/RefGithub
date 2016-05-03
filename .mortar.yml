@@ -1,0 +1,11 @@
+branches:
+  only:
+    - master
+language: java
+jdk: oraclejdk7
+before_install: "ls -la ; pwd"
+install: mvn clean install
+script: "ls -laR"
+jenkins:
+  collect:
+    artifact: '**/target/*.jar'
