@@ -7,5 +7,6 @@ before_install: "ls -la ; pwd"
 install: mvn clean install
 script: "ls -laR"
 jenkins:
+  unstable: true
   collect:
     artifact: '**/target/*.jar'
