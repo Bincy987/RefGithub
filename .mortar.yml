@@ -9,3 +9,4 @@ script: "ls -laR"
 jenkins:
   collect:
     artifacts: target/*.jar
+    junit: target/surefire-reports/*.xml
