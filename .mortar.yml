@@ -9,4 +9,4 @@ script: "ls -laR"
 jenkins:
   unstable: true
   collect:
-    artifacts: 'target/*.jar'
+    artifacts: '**/target/*.jar'
