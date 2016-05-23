@@ -8,5 +8,5 @@ install: mvn clean install
 script: "ls -laR"
 jenkins:
   collect:
-    artifacts: target/*.jar
+    artifacts: 'target/*.jar'
     junit: target/surefire-reports/*.xml
